@@ -147,3 +147,67 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+
+
+#############################################
+
+
+##
+
+
+Kyoto Cabinet: a straightforward implementation of DBM
+Copyright (C) 2009-2012 Mikio Hirabayashi
+Last Update: Fri, 04 Mar 2011 23:07:26 -0800
+Kyoto Cabinet
+
+There's a successor: Tkrzw. I recommend you to try it.
+Overview
+
+Kyoto Cabinet is a library of routines for managing a database. The database is a simple data file containing records, each is a pair of a key and a value. Every key and value is serial bytes with variable length. Both binary data and character string can be used as a key and a value. Each key must be unique within a database. There is neither concept of data tables nor data types. Records are organized in hash table or B+ tree.
+
+Kyoto Cabinet runs very fast. For example, elapsed time to store one million records is 0.9 seconds for hash database, and 1.1 seconds for B+ tree database. Moreover, the size of database is very small. For example, overhead for a record is 16 bytes for hash database, and 4 bytes for B+ tree database. Furthermore, scalability of Kyoto Cabinet is great. The database size can be up to 8EB (9.22e18 bytes).
+
+Kyoto Cabinet is written in the C++ language, and provided as API of C++, C, Java, Python, Ruby, Perl, and Lua. Kyoto Cabinet is available on platforms which have API conforming to C++03 with the TR1 library extensions. Kyoto Cabinet is a free software licensed under the GNU General Public License.
+Documents
+
+The following are documents of Kyoto Cabinet. They are contained also in the source package.
+
+    Fundamental Specifications
+    Specifications of Command Line Utilities
+    Presentation
+    API Documents of the core library (C/C++)
+
+    API Documents for Java
+    API Documents for Python 3.x
+    API Documents for Python 2.x
+    API Documents for Ruby
+    API Documents for Perl
+    API Documents for Lua
+
+Packages
+
+The following are the source packages of Kyoto Cabinet. As for binary packages, see the site of each distributor.
+
+    Source Packages of the core library (C/C++)
+
+    Source Packages for Java
+    Source Packages for Python 3.x
+    Source Packages for Python 2.x
+    Source Packages for Ruby
+    Source Packages for Perl
+    Source Packages for Lua
+
+    Binary Packages for Windows (C/C++/Java)
+
+Information
+
+Kyoto Cabinet was written and is maintained by Mikio Hirabayashi. You can contact the author by e-mail to `mikio@gmail.com'.
+
+The following is a sibling project of Kyoto Cabinet.
+
+    Remote Service (Kyoto Tycoon)
+
+
+
